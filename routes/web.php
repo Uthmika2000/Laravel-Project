@@ -7,6 +7,7 @@ use App\Http\Controllers\AgentController;
 use App\Http\Controllers\OrderController;
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,7 +52,7 @@ Route::middleware(['auth','role:agent'])->group(function(){
 
 }); // End Group Agent middleware    
 
-Route::middleware(['auth'])->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-});
+// Route::middleware(['auth'])->group(function () {
+//     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+// });
 

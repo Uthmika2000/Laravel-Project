@@ -7,12 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-<h1>Order Details</h1>
+    <div class= "container-md mt-5" style= "border: 1px solid black; padding: 5px; background-color: red; ">
+<h3>Order Details</h3>
+<br>
     <p>Order ID: {{$orderDetails->order_id}}</p>
     <p>Total: {{$orderDetails->total}}</p>
     <p>Status: {{$orderDetails->status}}</p>
-
-    <center><h2>Order Items</h2></center>
+</div>
+<br>
+    <center><h2>ORDER ITEMS</h2></center>
     <div class="container-md mt-5">
     <table class="table">
         <thead class="thead-dark">
@@ -34,6 +37,7 @@
             @endforeach
         </tbody>
     </table>
+    <button type="button" class="btn btn-primary"><a href="http://127.0.0.1:8000/admin/dashboard" style="textDecoration: none; color: white;">BACK</a></button>
 </div>
 </body>
 </html>
